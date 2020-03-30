@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard"
+    tools:context=".view_att_helper1">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="283dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="92dp"
+        android:text="View Attendance"
+        android:textColor="#76FF03"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/view_select1"
+        android:layout_width="345dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <Button
+        android:id="@+id/view_btn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_background"
+        android:text="check"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/view_select1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view_select1"
+        app:layout_constraintTop_toBottomOf="@+id/view_select1" />
+
+    <TextView
+        android:id="@+id/lecture_conduct"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/view_btn1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/view_btn1"
+        app:layout_constraintTop_toBottomOf="@+id/view_btn1" />
+
+    <TextView
+        android:id="@+id/lecture_attend"
+        android:layout_width="348dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/lecture_conduct"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/lecture_conduct"
+        app:layout_constraintTop_toBottomOf="@+id/lecture_conduct" />
+
+    <TextView
+        android:id="@+id/taken_leave"
+        android:layout_width="352dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/lecture_attend"
+        app:layout_constraintStart_toStartOf="@+id/lecture_attend"
+        app:layout_constraintTop_toBottomOf="@+id/lecture_attend" />
+
+    <TextView
+        android:id="@+id/lecture_missed"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/taken_leave"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/taken_leave"
+        app:layout_constraintTop_toBottomOf="@+id/taken_leave" />
+
+    <TextView
+        android:id="@+id/lecture_canceled"
+        android:layout_width="352dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/lecture_missed"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lecture_missed"
+        app:layout_constraintTop_toBottomOf="@+id/lecture_missed" />
+</androidx.constraintlayout.widget.ConstraintLayout>

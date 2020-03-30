@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard"
+    tools:context="com.raju.attendencetracker.Modify_helper">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="310dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="48dp"
+        android:text="Modify Attendance"
+        android:textColor="#76FF03"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/modify_date"
+        android:layout_width="102dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:text="select Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Spinner
+        android:id="@+id/modify_spinner"
+        android:layout_width="327dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modify_date" />
+
+    <Button
+        android:id="@+id/modify_btn"
+        android:layout_width="328dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:text="Modify"
+        app:layout_constraintEnd_toEndOf="@+id/modify_spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/modify_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/modify_spinner" />
+
+    <TextView
+        android:id="@+id/hidesubject"
+        android:layout_width="326dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="28dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/modify_btn"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/modify_btn"
+        app:layout_constraintTop_toBottomOf="@+id/modify_btn" />
+
+    <TextView
+        android:id="@+id/hide_mark"
+        android:layout_width="325dp"
+        android:layout_height="36dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/hidesubject"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/hidesubject"
+        app:layout_constraintTop_toBottomOf="@+id/hidesubject" />
+
+    <Button
+        android:id="@+id/edit_hide"
+        android:layout_width="74dp"
+        android:layout_height="33dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:text="Edit"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/hide_mark"
+        app:layout_constraintTop_toBottomOf="@+id/hide_mark" />
+
+    <Button
+        android:id="@+id/present_hide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:text=" present class"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/hide_mark"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="@+id/hide_mark"
+        app:layout_constraintTop_toBottomOf="@+id/edit_hide" />
+
+    <Button
+        android:id="@+id/absent_hide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:text="Absent class"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/present_hide"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/present_hide"
+        app:layout_constraintTop_toBottomOf="@+id/present_hide" />
+
+    <Button
+        android:id="@+id/cancel_hide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:text="Cancel class"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/absent_hide"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/absent_hide"
+        app:layout_constraintTop_toBottomOf="@+id/absent_hide" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

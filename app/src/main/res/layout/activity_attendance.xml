@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard"
+    tools:context=".Attendance">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="280dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="60dp"
+        android:text="Mark Attendance"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/choosedata"
+        android:layout_width="167dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="56dp"
+        android:text="Choose Date "
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/present_btn"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:text="Present Class"
+        app:layout_constraintEnd_toEndOf="@+id/mark_spinner"
+        app:layout_constraintStart_toStartOf="@+id/mark_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/mark_spinner" />
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:text="Cancel Class"
+        app:layout_constraintEnd_toEndOf="@+id/present_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/present_btn"
+        app:layout_constraintTop_toBottomOf="@+id/present_btn" />
+
+    <Button
+        android:id="@+id/absent_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        android:text="Absent Class"
+        app:layout_constraintEnd_toEndOf="@+id/cancel_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/cancel_btn"
+        app:layout_constraintTop_toBottomOf="@+id/cancel_btn" />
+
+    <Spinner
+        android:id="@+id/mark_spinner"
+        android:layout_width="306dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosedata" />
+</androidx.constraintlayout.widget.ConstraintLayout>
